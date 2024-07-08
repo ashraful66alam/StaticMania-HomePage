@@ -1,0 +1,751 @@
+/* -------------------------Import Fonts---------------------------------------- */
+@font-face {
+  font-family: "Boska-Variable"; /* Name you'll use for the font */
+  src: url("source/fonts/Boska-Variable.ttf") format("truetype"); /* Path to TTF file */
+}
+
+@font-face {
+  font-family: "Boska"; /* Name you'll use for the font */
+  src: url("source/fonts/Boska-Light.otf") format("opentype"); /* OTF format */
+}
+@font-face {
+  font-family: "Boska-Italic"; /* Name you'll use for the font */
+  src: url("source/fonts/Boska-LightItalic.otf") format("opentype"); /* OTF format */
+}
+
+@font-face {
+  font-family: "Switzer-Variable"; /* Name you'll use for the font */
+  src: url("source/fonts/Switzer-Variable.ttf") format("truetype"); /* Path to TTF file */
+}
+@font-face {
+  font-family: "Switzer-VariableItalic"; /* Name you'll use for the font */
+  src: url("source/fonts/Switzer-VariableItalic.ttf") format("truetype"); /* Path to TTF file */
+}
+@font-face {
+  font-family: "Switzer"; /* Name you'll use for the font */
+  src: url("source/fonts/Switzer-Extralight.otf") format("opentype"); /* OTF format */
+}
+
+/* -----------------global css------------------------ */
+* {
+  box-sizing: border-box;
+}
+HTML,
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  background-color: #1b3936;
+  background-image: url("source/image/noiseBG.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* ----------------------Navigation bar css------------------------------ */
+.navContainer {
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
+nav {
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1214px;
+  height: 33px;
+  margin: auto;
+  align-items: center;
+  margin-top: 29.6px;
+}
+nav aside {
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+  color: #ffffff;
+  font-size: 18px;
+}
+nav aside p:hover {
+  color: #75ff69;
+  cursor: pointer;
+}
+.logo {
+  width: 168.3px;
+  /* height: 33px; */
+}
+
+/* ---------------------Hero Container css-------------------------- */
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 1394.9px; */
+  height: 1079px;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: clip;
+}
+.heroContainer img {
+  height: 570px;
+  /* width: 570px; */
+  aspect-ratio: 1/1;
+}
+.heroContainer .line {
+  border: 2px dashed #75ff69;
+  height: 1188px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.heroContainer .line .playContainer {
+  height: 120px;
+  aspect-ratio: 1/1;
+  background-image: url("source/image/noiseBG.png");
+  right: -60px;
+  bottom: 43%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroContainer .line .playContainer img {
+  height: 82px;
+  aspect-ratio: 1/1;
+}
+
+.heroContainer .title {
+  position: absolute;
+  color: #ffffff;
+  height: 724px;
+  width: 1070px;
+  /* left: 232px; */
+  margin-left: 72px;
+  top: 183px;
+  text-transform: capitalize;
+  font-family: "Boska", "Boska-Variable", sans-serif;
+}
+.heroContainer .title h1 {
+  font-size: 262px;
+  line-height: 185.6px;
+  height: 162px;
+  width: 879px;
+  margin-top: unset;
+  margin-bottom: unset;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.heroContainer .title > h1:nth-child(2) {
+  color: #75ff69;
+  /* font-style: italic; */
+  /* margin-left: 191px; */
+  margin-left: 225px;
+  font-family: "Boska-Italic", "Boska-Variable", sans-serif;
+}
+
+.heroContainer .title .concat {
+  position: relative;
+}
+.heroContainer .title .concat p {
+  text-align: center;
+  margin: 0 0 0 -7%;
+  font-size: 32px;
+}
+
+.heroContainer .title .concat h1 {
+  margin-left: 48px;
+  position: absolute;
+  top: 15px;
+}
+
+.heroContainer .title .subTitle {
+  bottom: 0px;
+  position: absolute;
+  width: inherit;
+}
+
+.heroContainer .title .subTitle p {
+  text-align: center;
+  margin: 0 0 0 20%;
+  width: 570px;
+  height: 72px;
+  font-family: "Switzer-Variable", sans-serif;
+}
+
+/* -----------------------Info Section Css--------------- */
+.infoContainer {
+  height: 850px;
+  background-color: #f9f9f9;
+  display: flex;
+  gap: 207px;
+  color: #1b3936;
+}
+.infoContainer > .left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 105px;
+  gap: 41.92px;
+}
+
+.infoContainer > .left img {
+  width: 203px;
+  height: 276.08px;
+  margin-top: 107px;
+}
+.infoContainer > .left p {
+  width: 609px;
+  height: 128px;
+  font-family: "Switzer-Variable", sans-serif;
+  margin: 0 0 0 18px;
+  font-size: 24px;
+}
+.infoContainer > .right {
+  padding-top: 115px;
+  display: flex;
+  flex-direction: column;
+  gap: 104px;
+}
+
+.infoContainer > .right p {
+  font-family: "Switzer-Variable", sans-serif;
+  font-size: 24px;
+  margin: unset;
+  line-height: 50px;
+}
+.infoContainer > .right span {
+  font-family: "Boska-Variable", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+/* -------------------------Landing Image Css----------------- */
+
+.landingImageContainer {
+  height: 850px;
+}
+.landingImageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* -------------------------About US Css----------------- */
+
+.aboutUsContainer {
+  height: 1624px;
+  position: relative;
+}
+.aboutUsContainer h3 {
+  color: #75ff69;
+  font-size: 24px;
+  font-family: "Switzer", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: unset;
+  /* margin-top: 233px; */
+  padding-top: 233px;
+  text-align: center;
+}
+.aboutUsContainer p {
+  color: #678784;
+  height: 880px;
+  width: 1183.29px;
+  padding: 0px 50px;
+  text-align: center;
+  margin: 31px auto;
+  font-size: 68px;
+  font-family: "Boska-Variable", sans-serif;
+  text-transform: capitalize;
+  z-index: 2;
+  position: relative;
+  background: radial-gradient(#1b3936 57%, transparent 80%);
+}
+
+.aboutUsContainer p > span {
+  color: #ffffff;
+}
+.aboutUsContainer img {
+  width: 401px;
+  position: absolute;
+}
+
+#AUI1 {
+  height: 342px;
+  top: 321px;
+  left: 38px;
+}
+#AUI2 {
+  height: 526px;
+  top: 76px;
+  left: 978px;
+}
+#AUI3 {
+  height: 531px;
+  top: 948px;
+  left: 149px;
+}
+#AUI4 {
+  height: 531px;
+  top: 980px;
+  left: 882px;
+}
+
+/* -------------------------Unique Rooms Css----------------- */
+svg {
+  margin-bottom: -6px;
+}
+.uniqueRoomsContainer {
+  height: 1496px;
+  /* background-color: #ffffff; */
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.uniqueRoomsContainer h2 {
+  margin: unset;
+  font-size: 68px;
+  font-family: "Boska", "Boska-Variable", sans-serif;
+  text-transform: capitalize;
+  height: 176px;
+  width: 784px;
+  position: relative;
+  top: 209px;
+  left: 125px;
+}
+
+.roomImgContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0px 21px;
+  top: 534px;
+  position: absolute;
+}
+
+.roomImg {
+  position: relative;
+}
+.roomImg img {
+  max-width: 100%;
+  height: auto;
+}
+.roomImg h2,
+.roomImg p {
+  position: absolute;
+}
+.roomImg h2 {
+  font-family: "Boska", "Boska-Variable", sans-serif;
+  color: #f9f9f9;
+}
+.roomImg p {
+  font-family: "Switzer", sans-serif;
+  color: #ffffff;
+}
+.big {
+  height: 778.32;
+  width: 582px;
+}
+.big h2 {
+  left: 46px;
+  top: 577.16px;
+  font-size: 68px;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.big p {
+  left: 46px;
+  top: 670.16px;
+  width: 381px;
+  height: 48px;
+  font-size: 18px;
+  display: block;
+}
+.small {
+  height: 505.68px;
+  width: 378px;
+  top: 136.32px;
+}
+.small h2 {
+  font-size: 32.11px;
+  top: 409px;
+  left: 42px;
+  font-weight: lighter;
+  width: 80%;
+}
+.small p {
+  left: 42px;
+  display: none;
+}
+
+#roomIcon {
+  height: 47.4px;
+  width: 43.37px;
+  position: absolute;
+  top: 609.16px;
+  right: 45.6px;
+}
+
+.big #roomIcon {
+  display: block;
+}
+.small #roomIcon {
+  display: none;
+}
+
+/* ------------------------------CTA CSS-------------------------- */
+.ctaContainer {
+  height: 704px;
+  width: 1194px;
+  margin: 104px auto 91px auto;
+  position: relative;
+}
+.ctaContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ctaContainer h2,
+.ctaContainer p {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.ctaContainer h2 {
+  position: absolute;
+  color: #ffffff;
+  top: 169px;
+  margin: unset;
+  font-family: "Boska", sans-serif;
+  font-size: 68px;
+  width: 603px;
+  height: 176px;
+  text-transform: capitalize;
+}
+.ctaContainer h2 span {
+  color: #75ff69;
+}
+.ctaContainer p {
+  position: absolute;
+  color: #ffffff;
+  top: 366px;
+  margin: unset;
+  font-family: "Switzer-Variable", sans-serif;
+  font-size: 18px;
+  width: 420px;
+  height: 50px;
+}
+
+.ctaContainer form {
+  position: absolute;
+  top: 476px;
+  width: 100%;
+  text-align: center;
+}
+.ctaContainer form input[type="text"],
+.ctaContainer form input[type="submit"] {
+  height: 60px;
+  padding: unset;
+  border: unset;
+  font-family: "Switzer-Variable", sans-serif;
+  font-size: 18px;
+}
+.ctaContainer form input[type="text"] {
+  width: 396px;
+  padding-left: 21px;
+}
+.ctaContainer form input[type="submit"] {
+  width: 174px;
+  color: #1b3936;
+  background: #75ff69;
+  font-weight: 600;
+  margin-left: -6px;
+  transition: ease-in-out 0.5s;
+}
+
+.ctaContainer form input[type="submit"]:hover {
+  color: #75ff69;
+  background: #1b3936;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+/* ------------------------------Testimonial css----------------------------- */
+
+.testimonialContainer {
+  height: 1250px;
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: clip;
+}
+.testimonialContainer h1 {
+  width: 750px;
+  height: 176px;
+  top: 70px;
+  left: 139px;
+  position: absolute;
+  font-size: 68px;
+  font-family: "Boska-Variable", sans-serif;
+  font-weight: initial;
+  margin: unset;
+  color: #1b3936;
+}
+.testimonialContainer > p {
+  font-family: "Switzer-Variable", sans-serif;
+  font-size: 18px;
+  color: #1b3936;
+  width: 379px;
+  height: 48px;
+  position: absolute;
+  top: 183px;
+  right: 121px;
+  margin: unset;
+}
+.responseContainer {
+  position: absolute;
+  top: 418px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  left: 75px;
+}
+.response {
+  width: 456px;
+  height: 477px;
+  position: relative;
+}
+.response aside {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  height: 152px;
+  width: 426px;
+  /* background-image: linear-gradient(to top, #F9F9F9, #ffffff); */
+  background-image: linear-gradient(to top, #cecece 0%, #fff 20%);
+  z-index: 2;
+  padding-left: 18px;
+  padding-top: 24px;
+  overflow: auto;
+}
+.response aside img {
+  height: 20px;
+  aspect-ratio: 1/1;
+  margin-bottom: 19px;
+}
+.response aside h4 {
+  margin: unset;
+  margin-bottom: 19px;
+  font-family: "Switzer-Variable", sans-serif;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: inherit;
+  color: #1b3936;
+}
+.response aside p {
+  margin: unset;
+  font-family: "Switzer-Variable", sans-serif;
+  font-size: 16px;
+  color: #1b3936;
+}
+.userImg {
+  width: 378px;
+  height: 477px;
+  position: absolute;
+  right: 0px;
+}
+.controlButton {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: absolute;
+  bottom: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controlButton .icon {
+  background-color: #1b3936;
+  border-radius: 50%;
+  height: 60px;
+  aspect-ratio: 1/1;
+  text-align: center;
+  align-content: center;
+}
+.controlButton .icon:hover {
+  background-color: #75ff69;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+.controlButton svg path {
+  stroke: #ffffff;
+}
+.controlButton .icon:hover svg path {
+  stroke: black;
+  transition: ease-in-out 0.5s;
+}
+
+.controlButton .rightIcon {
+  transform: rotateY(180deg);
+}
+
+/* -------------------Details css------------- */
+
+.detailsContainer {
+  height: 532px;
+  background-color: #ffffff;
+  position: relative;
+}
+.detailsContainer aside {
+  position: absolute;
+  top: 78px;
+  left: 183px;
+}
+.detailsContainer aside h1,
+.detailsContainer aside p {
+  margin: unset;
+  color: #1b3936;
+}
+.detailsContainer aside h1 {
+  font-family: "Boska-Variable", sans-serif;
+  text-transform: capitalize;
+  font-size: 68px;
+  width: 711px;
+  height: 176px;
+  font-weight: inherit;
+  margin-bottom: 7px;
+}
+.detailsContainer aside p {
+  font-family: "Switzer-Variable", sans-serif;
+  font-size: 18px;
+  width: 208px;
+  height: 24px;
+  margin-bottom: 70px;
+}
+.detailsContainer aside input {
+  width: 200px;
+  height: 72px;
+  background-color: #ffffff;
+  color: #1b3936;
+  border: 1px solid #1b3936;
+  border-radius: 50%;
+  padding: unset;
+  font-size: 18px;
+  font-family: "Switzer-Variable", sans-serif;
+  transition: ease-in-out 0.5s;
+}
+.detailsContainer aside input:hover {
+  color: #ffffff;
+  background-color: #1b3936;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+.detailsContainer > .logoIcon {
+  right: 192px;
+  position: absolute;
+  height: 276.08px;
+  width: 203px;
+  top: 133px;
+}
+
+/* -------------------Links css-------------- */
+.linksContainer {
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+}
+.linksContainer .link {
+  flex: 33.3%;
+  position: relative;
+  transition: ease-in-out 1s;
+}
+.linksContainer .link:hover {
+  background-color: #75ff69;
+  transition: ease-in-out 1s;
+  cursor: pointer;
+}
+.linksContainer .link:hover h2,
+.linksContainer .link:hover p {
+  color: #1b3936;
+  transition: ease-in-out 1s;
+}
+.linksContainer .link h2,
+.linksContainer .link p {
+  margin: unset;
+  padding-left: 124px;
+  position: absolute;
+  color: #ffffff;
+}
+.linksContainer .link h2 {
+  top: 104px;
+  font-size: 68px;
+  font-family: "Boska-Variable", sans-serif;
+  font-weight: inherit;
+  transition: ease-in-out 1s;
+}
+.linksContainer .link:hover h2 {
+  top: 158px;
+  transition: ease-in-out 1s;
+}
+
+.linksContainer .link p {
+  font-size: 16px;
+  font-family: "Switzer-Variable", sans-serif;
+  top: 181px;
+  transition: ease-in-out 1s;
+}
+.linksContainer .link:hover p {
+  top: 127px;
+  transition: ease-in-out 1s;
+}
+.linksContainer .link > .icon {
+  height: 64.23px;
+  aspect-ratio: 1/1;
+  margin-left: 337px;
+  position: absolute;
+  top: 174px;
+  transition: ease-in-out 1s;
+}
+
+.linksContainer .link:hover > .icon {
+  margin-left: 385px;
+  top: 219px;
+}
+.linksContainer .link > .icon > svg {
+  height: 100%;
+  width: 100%;
+  transform: rotateZ(225deg);
+}
+.linksContainer .link > .icon > svg path {
+  stroke: #678784;
+  transition: ease-in-out 1s;
+}
+.linksContainer .link:hover > .icon > svg path {
+  stroke: #1b3936;
+  transition: ease-in-out 1s;
+}
+
+/* -----------------footer css--------------- */
+.footerContainer {
+  background-color: #ffffff;
+}
+.footerContainer > .links {
+  display: flex;
+  flex-direction: row;
+  width: 976px;
+  margin: auto;
+  justify-content: space-around;
+  font-family: "Switzer-Variable", sans-serif;
+  color: #1b3936;
+  font-size: 18px;
+}
+
+.footerContainer > .links p:hover {
+  color: #75ff69;
+  cursor: pointer;
+}

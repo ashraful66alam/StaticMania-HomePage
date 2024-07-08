@@ -1,7 +1,4 @@
 window.onload = function () {
-    alert("This page is loaded!");
-    // const line = document.getElementById("room1").addEventListener('click'); // Replace with your element's ID
-
     document.getElementById("room1").addEventListener("click", function () {
         document.getElementById("room1").classList.add("big");
         document.getElementById("room1").classList.remove("small");
